@@ -70,10 +70,10 @@
         width: 30px;
         height: 30px;
         background: url("./images/icon-slider.svg") no-repeat center,
-          hsl(174, 86%, 45%); /* Example: strong cyan */
+          hsl(174, 77%, 80%); /* Example: strong cyan */
         background-size: 50%; /* Adjust size of the image */
         border-radius: 50%;
-        box-shadow: 1px 10px 20px hsl(174, 86%, 45%);
+        box-shadow: 1px 10px 25px hsl(174, 86%, 45%);
         cursor: pointer;
       }
 
@@ -81,10 +81,14 @@
         width: 30px;
         height: 30px;
         background: url("./images/icon-slider.svg") no-repeat center,
-          hsl(174, 86%, 45%);
+          hsl(174, 77%, 80%);
         background-size: 50%; /* Adjust size of the image */
         border-radius: 50%;
         cursor: pointer;
+      }
+      #slider:active::-webkit-slider-thumb {
+        background: url("./images/icon-slider.svg") no-repeat center,
+          hsl(174, 86%, 45%);
       }
       .toggle {
         position: relative;
@@ -117,6 +121,9 @@
       }
       .toggle input:checked ~ p {
         color: hsl(174, 86%, 45%);
+      }
+      .toggle:hover {
+        background-color: hsl(174, 77%, 80%);
       }
       #card {
         box-shadow: 0px 10px 20px hsl(224, 65%, 95%);
